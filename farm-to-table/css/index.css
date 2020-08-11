@@ -231,6 +231,7 @@ nav.social{
     justify-content: space-between;
     margin-top:10%;
 }
+
 nav.main{
     display: flex;
     flex-direction: column;
@@ -245,4 +246,110 @@ nav.main a{
     display:flex;
     justify-content: flex-end;
     align-items:flex-end;
+}
+
+
+/*Tablets*/
+@media (max-width: 800px0){
+    .links{
+        width:70%;
+    }
+    #about .text{
+        width:80%;
+    }
+
+    .gallery div .hide{
+        background-color: #fff;
+        display:block;
+        width:70%;
+    }
+
+    .galery div .hide h2{
+        font-size: 2.2rem;
+    }
+
+    .contact-info{
+        width:80%;
+    }
+
+    .left{
+        width:60%;
+    }
+
+    .right{
+        width:40%;
+    }
+}
+
+/*Mobile*/
+@media (max-width:500px){
+    header nav{
+        flex-direction: column;
+        height:18vh;
+    }
+
+    .links{
+        width:100%;
+    }
+
+    .logo{
+        text-align:center;
+    }
+
+    .titles{
+        background-color:rgba(255,255,255,0.8);
+    }
+
+    .container{
+        flex-direction:column;
+    }
+
+    .box{
+        width:90%;
+        margin:4% 0;
+    }
+
+    #about .text{
+        width:90%
+    }
+
+    .gallery div{
+        width:90%;
+    }
+
+    #contact{
+        justify-content: center;
+    }
+
+    .left, .right{
+        width:90%;
+    }
+
+    .right{
+        order:-1;
+    }
+
+    #contact h2{
+        order:-2;
+    }
+
+    .img-container{
+        width:90%;
+    }
+
+    .contact-info{
+        width:90%;
+    }
+
+    footer{
+        flex-wrap: wrap;
+    }
+
+    footer div{
+        width:90%;
+    }
+
+    .copyright{
+        justify-content: flex-start;
+    }
 }
